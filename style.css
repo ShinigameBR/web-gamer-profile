@@ -1,0 +1,48 @@
+:root {
+    --background-color-2: #ea00ff;
+    --background-color-1: #ae00ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right top, var(--background-color-1), var(--background-color-2));
+}
+
+.glass {
+    min-height: 80vh;
+    width: 60%;
+    z-index: 2;
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 1rem;
+    backdrop-filter: blur(2rem);
+}
+
+.circle1,
+.circle2 {
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+}
+
+.circle1 {
+    top: 5%;
+    right: 12%;
+}
+
+.circle2 {
+    bottom: 5%;
+    left: 12%;
+}
